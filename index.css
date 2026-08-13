@@ -13,7 +13,7 @@
         --border-hover: #00000080;
         --bg-footer: #08080a;
         --text-good: #00ffe1;
-        --text-alert: #ff674c;
+        --text-alert: #ffbd4c;
         --header-gradient: linear-gradient(135deg, #fff 60%, #0090ff 100%);
         --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -34,7 +34,7 @@
         --border-hover: #ffffff80;
         --bg-footer: #e5e8ea;
         --text-good: #3e86b6;
-        --text-alert: #d45039;
+        --text-alert: #d4a539;
         --header-gradient: linear-gradient(135deg, #000 60%, #0090ff 100%);
         --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -232,30 +232,47 @@ main {
     font-size: 18px;
 }
 
-.features-grid {
+.features-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+}
+
+.features-block {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5em;
+    width: 30%;
+}
+
+.features-views {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: calc(70% - 2em);
 }
 
 .feature-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border);
+    min-width: 300px;
     border-radius: 12px;
-    padding: 1.5em 2em 3em 2em;
+    padding: 1.5em 2em;
+    margin-bottom: 2em;
     text-align: left;
     position: relative;
     overflow: hidden;
     transition: var(--transition);
 }
 
-.feature-card p {
+.feature-view p {
+    text-align: left;
     height: 4em;
 }
 
-.feature-card picture {
+.feature-view picture {
     width: 100%;
-    height: 13em;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,8 +281,8 @@ main {
     border-radius: 6px;
 }
 
-.feature-card img {
-    scale: 0.4;
+.feature-view img {
+    width: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
@@ -274,10 +291,6 @@ main {
     transform: translateY(-8px);
     border-color: var(--primary);
     box-shadow: 0 10px 30px var(--border-hover);
-}
-
-.feature-card:hover img {
-    transform: scale(0.4);
 }
 
 .feature-card::before {
@@ -299,7 +312,6 @@ main {
 
 .feature-card h3 {
     font-size: 20px;
-    margin-bottom: 12px;
 }
 
 .feature-card p {
@@ -308,9 +320,10 @@ main {
 }
 
 .install-layout {
-    margin-bottom: 100px;
+    margin-top: 2em;
+    margin-bottom: 200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2em;
     align-items: top;
     text-align: left;
@@ -338,7 +351,12 @@ main {
 .install-layout li {
     color: var(--text-muted);
     font-size: 17px;
-    margin-bottom: 1em;
+    margin: 2em 0;
+}
+
+.install-layout h3 {
+    font-size: 24px;
+    margin-top: 1em;
 }
 
 .install-layout ul {
@@ -424,7 +442,7 @@ main {
 
 .btn-copy {
     background-color: #ffffff0d;
-    border: 1px solid #f0f3f8;
+    border: 1px solid #252526;
     color: #fff;
     padding: 6px 12px;
     border-radius: 5px;

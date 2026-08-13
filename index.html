@@ -1,153 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RQTLL - ROS2 Qt Layer for Low-level operations</title>
-    <meta name="description" content="Integrated Development Environment built in PySide6 and Rust for ROS 2 robotics developers.">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RQTLL - ROS2 Qt Layer for Low-level operations</title>
+	<meta name="description"
+		content="Integrated Development Environment built in PySide6 and Rust for ROS 2 robotics developers.">
 	<link rel="icon" href="src/assets/branding/logo.png" type="image/png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Ubuntu+Mono&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
 
 	<link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <nav>
-        <a href="#" class="logo-container">
+	<nav>
+		<a href="#" class="logo-container">
 			<picture>
-  				<source media="(prefers-color-scheme: dark)" srcset="./src/assets/branding/symbolic-white.svg">
-  				<source media="(prefers-color-scheme: light)" srcset="./src/assets/branding/symbolic-black.svg">
+				<source media="(prefers-color-scheme: dark)" srcset="./src/assets/branding/symbolic-white.svg">
+				<source media="(prefers-color-scheme: light)" srcset="./src/assets/branding/symbolic-black.svg">
 				<img src="./src/assets/branding/symbolic-white.svg" alt="RQTLL Logo" width="40" height="40">
 			</picture>
 			<span class="logo-text font-outfit">RQTLL</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="#features">Características</a></li>
-            <li><a href="#install">Instalación</a></li>
-            <!-- <li><a href="#" target="_blank">Documentación</a></li> -->
-            <li>
-                <a href="https://github.com/RQTLL" target="_blank" class="btn-github">
-                    <i class="fa-brands fa-github"></i>
-                    GitHub
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <section class="hero">
+		</a>
+		<ul class="nav-links">
+			<li><a href="#features">Características</a></li>
+			<li><a href="#install">Instalación</a></li>
+			<!-- <li><a href="#" target="_blank">Documentación</a></li> -->
+			<li>
+				<a href="https://github.com/RQTLL" target="_blank" class="btn-github">
+					<i class="fa-brands fa-github"></i>
+					GitHub
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<section class="hero">
 			<h1>ROS2 QT LAYER FOR LOW-LEVEL OPERATIONS</h1>
-            <div class="hero-badge">Ecosistema RQTLL Listo para ROS 2</div>
-            <p>RQTLL combina un cliente PySide6 con backend en Rust para ofrecerte control, telemetría y compilación asíncrona de ROS 2 en un solo lugar.</p>
-            <div class="hero-actions">
-                <a href="#install" class="btn-primary">Instalar ahora</a>
-                <a href="https://github.com/RQTLL/rqtll-ide" target="_blank" class="btn-secondary">Explorar Código</a>
-            </div>
+			<div class="hero-badge">Ecosistema RQTLL Listo para ROS 2</div>
+			<p>RQTLL combina un cliente PySide6 con backend en Rust para ofrecerte control, telemetría y compilación
+				asíncrona de ROS 2 en un solo lugar.</p>
+			<div class="hero-actions">
+				<a href="#install" class="btn-primary">Instalar ahora</a>
+				<a href="https://github.com/RQTLL/rqtll-ide" target="_blank" class="btn-secondary">Explorar Código</a>
+			</div>
 
-            <div class="main-frame">
+			<div class="main-frame">
 				<picture>
-  					<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A3-WORKSPACE-3D.webp">
-  					<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A3-WORKSPACE-3L.webp">
-                <img src="./src/releases/dark/web/A3-WORKSPACE-3D.webp" alt="RQTLL Welcome Launcher">
-            </div>
+					<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A3-WORKSPACE-3D.webp">
+					<source media="(prefers-color-scheme: light)"
+						srcset="./src/releases/light/web/A3-WORKSPACE-3L.webp">
+					<img src="./src/releases/dark/web/A3-WORKSPACE-3D.webp" alt="RQTLL Welcome Launcher">
+			</div>
 
-        </section>
+		</section>
 
-        <section id="features" class="features-section">
-            <h2>Características Destacadas</h2>
-            <p class="sub">Desarrolla y controla tus robots en ROS 2 con un ecosistema en constante evolución.</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fa-solid fa-box-open"></i>
-                    <h3>Asistente de instalación</h3>
-                    <p>El asistente instala ROS 2 de forma automática y simple.</p>
-					<picture>
-  						<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A1-WIZARD-1D.webp">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A1-WIZARD-1L.webp">
-						<img src="./src/releases/dark/web/A1-WIZARD-1D.webp" alt="RQTLL Installer">
-					</picture>
-                </div>
-				<div class="feature-card">
-					<i class="fa-solid fa-database"></i>
-					<h3>Gestor de proyectos</h3>
-					<p>Organiza y gestiona tus proyectos de ROS 2 de manera sencilla.</p>
-					<picture>
-  						<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A2-START-1D.webp">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A2-START-1L.webp">
-						<img src="./src/releases/dark/web/A2-START-1D.webp" alt="RQTLL Project Manager">
-					</picture>
+		<section id="features" class="features-section">
+			<h2>Características Destacadas</h2>
+			<p class="sub">Desarrolla y controla tus robots en ROS 2 con un ecosistema en constante evolución.</p>
+			<div class="features-layout">
+				<div class="features-block">
+					<div class="feature-card" id="fn0">
+						<i class="fa-solid fa-box-open"></i>
+						<h3>Asistente de instalación</h3>
+					</div>
+					<div class="feature-card" id="fn1">
+						<i class="fa-solid fa-database"></i>
+						<h3>Gestor de proyectos</h3>
+					</div>
+					<div class="feature-card" id="fn2">
+						<i class="fa-solid fa-tasks"></i>
+						<h3>Control y telemetría</h3>
+					</div>
+					<div class="feature-card" id="fn3">
+						<i class="fa-solid fa-robot"></i>
+						<h3>Herramientas de robótica</h3>
+					</div>
+					<div class="feature-card" id="fn4">
+						<i class="fa-solid fa-link"></i>
+						<h3>Accesos directos</h3>
+					</div>
+					<div class="feature-card" id="fn5">
+						<i class="fa-solid fa-cubes"></i>
+						<h3>Gestor de paquetes</h3>
+					</div>
 				</div>
-				<div class="feature-card">
-					<i class="fa-solid fa-tasks"></i>
-					<h3>Control y telemetría</h3>
-					<p>Controla y monitorea nodos, lanzadores y tópicos de ROS 2 desde un solo lugar.</p>
-					<picture>
-  						<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A3-WORKSPACE-2D.webp">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A3-WORKSPACE-2L.webp">
-						<img src="./src/releases/dark/web/A3-WORKSPACE-2D.webp" alt="RQTLL Telemetry Control">
-					</picture>
+				<div class="features-views">
+					<div class="feature-view" id="fn0">
+						<p>El asistente instala ROS 2 de forma automática y simple.</p>
+						<picture>
+							<source media="(prefers-color-scheme: dark)"
+								srcset="./src/releases/dark/web/A1-WIZARD-1D.webp">
+							<source media="(prefers-color-scheme: light)"
+								srcset="./src/releases/light/web/A1-WIZARD-1L.webp">
+							<img src="./src/releases/dark/web/A1-WIZARD-1D.webp" alt="RQTLL Installer">
+						</picture>
+					</div>
+					<div class="feature-view" id="fn1" hidden>
+						<p>Organiza y gestiona tus proyectos de ROS 2 de manera sencilla.</p>
+						<picture>
+							<source media="(prefers-color-scheme: dark)"
+								srcset="./src/releases/dark/web/A2-START-1D.webp">
+							<source media="(prefers-color-scheme: light)"
+								srcset="./src/releases/light/web/A2-START-1L.webp">
+							<img src="./src/releases/dark/web/A2-START-1D.webp" alt="RQTLL Project Manager">
+						</picture>
+					</div>
+					<div class="feature-view" id="fn2" hidden>
+						<p>Controla y monitorea nodos, lanzadores y tópicos de ROS 2 desde un solo lugar.</p>
+						<picture>
+							<source media="(prefers-color-scheme: dark)"
+								srcset="./src/releases/dark/web/A3-WORKSPACE-2D.webp">
+							<source media="(prefers-color-scheme: light)"
+								srcset="./src/releases/light/web/A3-WORKSPACE-2L.webp">
+							<img src="./src/releases/dark/web/A3-WORKSPACE-2D.webp" alt="RQTLL Telemetry Control">
+						</picture>
+					</div>
+					<div class="feature-view" id="fn3" hidden>
+						<p>Accede a herramientas de teleoperación y visualización de gráficos de ROS 2.</p>
+						<picture>
+							<source media="(prefers-color-scheme: dark)"
+								srcset="./src/releases/dark/web/A3-WORKSPACE-3D.webp">
+							<source media="(prefers-color-scheme: light)"
+								srcset="./src/releases/light/web/A3-WORKSPACE-3L.webp">
+							<img src="./src/releases/dark/web/A3-WORKSPACE-3D.webp" alt="RQTLL Robotics Tools">
+						</picture>
+					</div>
+					<div class="feature-view" id="fn4" hidden>
+						<p>Accede rápidamente a SSH, rqt, RViz2 y Gazebo desde la interfaz de RQTLL.</p>
+						<picture>
+							<source media="(prefers-color-scheme: dark)"
+								srcset="./src/releases/dark/web/A3-WORKSPACE-6D.webp">
+							<source media="(prefers-color-scheme: light)"
+								srcset="./src/releases/light/web/A3-WORKSPACE-6L.webp">
+							<img src="./src/releases/dark/web/A3-WORKSPACE-6D.webp" alt="RQTLL Shortcuts">
+						</picture>
+					</div>
+					<div class="feature-view" id="fn5" hidden>
+						<p>Instala y gestiona paquetes de ROS 2, Python y RTI de manera sencilla.</p>
+						<picture>
+							<source media="(prefers-color-scheme: dark)"
+								srcset="./src/releases/dark/web/A3-WORKSPACE-9D.webp">
+							<source media="(prefers-color-scheme: light)"
+								srcset="./src/releases/light/web/A3-WORKSPACE-9L.webp">
+							<img src="./src/releases/dark/web/A3-WORKSPACE-9D.webp" alt="RQTLL Package Manager">
+						</picture>
+					</div>
 				</div>
-				<div class="feature-card">
-					<i class="fa-solid fa-robot"></i>
-					<h3>Herramientas de robótica</h3>
-					<p>Accede a herramientas de teleoperación y visualización de gráficos de ROS 2.</p>
-					<picture>
-  						<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A3-WORKSPACE-3D.webp">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A3-WORKSPACE-3L.webp">
-						<img src="./src/releases/dark/web/A3-WORKSPACE-3D.webp" alt="RQTLL Robotics Tools">
-					</picture>
-				</div>
-				<div class="feature-card">
-					<i class="fa-solid fa-link"></i>
-					<h3>Accesos directos</h3>
-					<p>Accede rápidamente a SSH, rqt, RViz2 y Gazebo desde la interfaz de RQTLL.</p>
-					<picture>
-  						<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A3-WORKSPACE-6D.webp">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A3-WORKSPACE-6L.webp">
-						<img src="./src/releases/dark/web/A3-WORKSPACE-6D.webp" alt="RQTLL Shortcuts">
-					</picture>
-				</div>
-				<div class="feature-card">
-					<i class="fa-solid fa-cubes"></i>
-					<h3>Gestor de paquetes</h3>
-					<p>Instala y gestiona paquetes de ROS 2, Python y RTI de manera sencilla.</p>
-					<picture>
-						<source media="(prefers-color-scheme: dark)" srcset="./src/releases/dark/web/A3-WORKSPACE-9D.webp">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/releases/light/web/A3-WORKSPACE-9L.webp">
-						<img src="./src/releases/dark/web/A3-WORKSPACE-9D.webp" alt="RQTLL Package Manager">
-					</picture>
-				</div>
-            </div>
-        </section>
+			</div>
+		</section>
 
-        <section id="install" class="install-section">
-            <h2>Instalación Simple</h2>
+		<section id="install" class="install-section">
+			<h2>Instalación Simple</h2>
 			<p class="sub">Instala RQTLL en tu sistema con un solo comando.</p>
 			<div class="install-layout">
-	            <div class="left install-text">
-    	            <p>RQTLL se instala en cualquier derivada de Ubuntu compatible con ROS 2. Ejecuta el siguiente comando en tu terminal para instalar RQTLL y sus dependencias. El comando descarga un script de instalación desde el repositorio de RQTLL y lo ejecuta con permisos de superusuario. Puedes revisar el script antes de ejecutarlo en <a href="https://github.com/RQTLL/rqtll-distro/blob/main/install.sh" target="_blank" rel="noopener noreferrer">rqtll-distro</a>.</p>
-        	    </div>
+				<div class="left install-text">
+					<p>RQTLL se instala en cualquier derivada de Ubuntu compatible con ROS 2. Ejecuta el siguiente
+						comando en tu terminal para instalar RQTLL y sus dependencias. El comando descarga un script de
+						instalación desde el repositorio de RQTLL y lo ejecuta con permisos de superusuario. Puedes
+						revisar el script antes de ejecutarlo en <a
+							href="https://github.com/RQTLL/rqtll-distro/blob/main/install.sh" target="_blank"
+							rel="noopener noreferrer">rqtll-distro</a>.</p>
+				</div>
 				<div class="terminal-window">
-    	            <div class="terminal-header">
-    	                <div class="window-title">bash - install</div>
-        	            <div class="window-dots">
-            	            <span class="dot"></span>
-                	        <span class="dot"></span>
-                    	    <span class="dot"></span>
-	                    </div>
-        	        </div>
-            	    <div class="terminal-body">
-                	    <div class="terminal-line">
-                    	    <span class="terminal-prompt">&gt;_</span>
-    	                    <span class="terminal-cmd" id="installCmd">sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/RQTLL/rqtll-distro/main/install.sh)"</span>
-        	                <button class="btn-copy" onclick="copyCommand()">
-            	                <i class="fa-regular fa-copy"></i>
-                	            <span id="copyText">Copiar</span>
-                    	    </button>
-                    	</div>
-            	    </div>
+					<div class="terminal-header">
+						<div class="window-title">bash - install</div>
+						<div class="window-dots">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+					</div>
+					<div class="terminal-body">
+						<div class="terminal-line">
+							<span class="terminal-prompt">&gt;_</span>
+							<span class="terminal-cmd" id="installCmd">sudo sh -c "$(curl -fsSL
+								https://raw.githubusercontent.com/RQTLL/rqtll-distro/main/install.sh)"</span>
+							<button class="btn-copy" onclick="copyCommand()">
+								<i class="fa-regular fa-copy"></i>
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="left recomended-system">
 					<h3>Sistema recomendado</h3>
@@ -161,43 +200,47 @@
 				<div class="install-notes">
 					<h3>Notas importantes</h3>
 					<ul>
-						<li>El script de instalación requiere permisos de superusuario para instalar dependencias y configurar el sistema.</li>
-						<li>El script está diseñado para sistemas basados en Ubuntu, puede fallar en otras distribuciones de Linux.</li>
-						<li>Revisa el script antes de ejecutarlo para asegurarte de que cumple con tus necesidades y políticas de seguridad.</li>
+						<li>El script de instalación requiere permisos de superusuario para instalar dependencias y
+							configurar el sistema.</li>
+						<li>El script está diseñado para sistemas basados en Ubuntu, puede fallar en otras
+							distribuciones de Linux.</li>
+						<li>Revisa el script antes de ejecutarlo para asegurarte de que cumple con tus necesidades y
+							políticas de seguridad.</li>
 					</ul>
 				</div>
-            </div>
-        </section>
-    </main>
+			</div>
+		</section>
+	</main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="footer-logo">
-                <a href="#" class="logo-container">
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="footer-logo">
+				<a href="#" class="logo-container">
 					<picture>
-  						<source media="(prefers-color-scheme: dark)" srcset="./src/assets/branding/symbolic-white.svg">
-  						<source media="(prefers-color-scheme: light)" srcset="./src/assets/branding/symbolic-black.svg">
+						<source media="(prefers-color-scheme: dark)" srcset="./src/assets/branding/symbolic-white.svg">
+						<source media="(prefers-color-scheme: light)" srcset="./src/assets/branding/symbolic-black.svg">
 						<img src="./src/assets/branding/symbolic-white.svg" alt="RQTLL Logo" width="200" height="200">
 					</picture>
-                </a>
-            </div>
+				</a>
+			</div>
 			<div class="footer-desc-container">
-                <span class="logo-text font-outfit">RQTLL</span>
-                <p class="footer-desc">El ecosistema abierto y moderno para el desarrollo e introspección ágil de robots en ROS 2.</p>
+				<span class="logo-text font-outfit">RQTLL</span>
+				<p class="footer-desc">El ecosistema abierto y moderno para el desarrollo e introspección ágil de robots
+					en ROS 2.</p>
 			</div>
 			<div class="footer-space"></div>
-            <div class="footer-links">
-                <div class="footer-group">
-                	<h4>Componentes</h4>
+			<div class="footer-links">
+				<div class="footer-group">
+					<h4>Componentes</h4>
 					<hr>
-                    <ul>
-                        <li><a href="https://github.com/RQTLL/rqtll-distro" target="_blank">Instalador</a></li>
-                        <li><a href="https://github.com/RQTLL/rqtll-ide" target="_blank">Frontend</a></li>
-                        <li><a href="https://github.com/RQTLL/rqtll-service" target="_blank">Backend</a></li>
-                        <li><a href="https://github.com/RQTLL/rqtll-api" target="_blank">API</a></li>
-                    </ul>
-                </div>
+					<ul>
+						<li><a href="https://github.com/RQTLL/rqtll-distro" target="_blank">Instalador</a></li>
+						<li><a href="https://github.com/RQTLL/rqtll-ide" target="_blank">Frontend</a></li>
+						<li><a href="https://github.com/RQTLL/rqtll-service" target="_blank">Backend</a></li>
+						<li><a href="https://github.com/RQTLL/rqtll-api" target="_blank">API</a></li>
+					</ul>
+				</div>
 				<div class="footer-group">
 					<h4>Recursos</h4>
 					<hr>
@@ -216,24 +259,35 @@
 					</ul>
 				</div>
 			</div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 RQTLL. Todos los derechos reservados.</p>
-            <p>Licencia MIT. Desarrollado por adnKSharp & la comunidad de robótica.</p>
-        </div>
-    </footer>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2026 RQTLL. Todos los derechos reservados.</p>
+			<p>Licencia MIT. Desarrollado por adnKSharp & la comunidad de robótica.</p>
+		</div>
+	</footer>
 
-    <script>
-        function copyCommand() {
-            const cmdText = document.getElementById('installCmd').innerText;
-            navigator.clipboard.writeText(cmdText).then(() => {
-                const copyText = document.getElementById('copyText');
-                copyText.innerText = "Copiado";
-                setTimeout(() => {
-                    copyText.innerText = "Copiar";
-                }, 2000);
-            });
-        }
-    </script>
+	<script>
+		function copyCommand() {
+			const cmdText = document.getElementById('installCmd').innerText;
+			navigator.clipboard.writeText(cmdText).then(() => {});
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const cards = document.querySelectorAll('.feature-card');
+			const views = document.querySelectorAll('.feature-view');
+
+			cards.forEach((card, index) => {
+				card.addEventListener('click', () => {
+					cards.forEach(c => c.classList.remove('active'));
+					views.forEach(v => v.hidden = true);
+					card.classList.add('active');
+					if (views[index]) {
+						views[index].hidden = false;
+					}
+				});
+			});
+		});
+	</script>
 </body>
+
 </html>
