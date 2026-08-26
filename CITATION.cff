@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use scikit-learn in a scientific publication, we would appreciate citations to the following paper:"
+authors:
+  - family-names: de la Cruz Osorio
+    given-names: Adan Rodrigo
+    orcid: https://orcid.org/0009-0003-3907-0663
+  - family-names: Garcia
+    given-names: Francesco
+    orcid: https://orcid.org/0000-0002-8571-914X
+title: "RQTLL: ROS2 Qt Layer for Low-level operations"
+type: software
+version: 1.0.0
+date-released: 2026-08-10
+license: "MIT"
+repository-code: "https://github.com/RQTLL/"
+url: "https://rqtll.github.io/"  
